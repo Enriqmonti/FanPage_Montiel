@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/da2008bd32.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav helper">
+            <img class="main-header__logo" src="./Media/Logo.png" alt="Logo Banda"/>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                <li class="menu__item"><a class="menu__link" href="live.html">Live</a></li>
+                <li class="menu__item"><a class="menu__link" href="miembros.html">Miembros</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+                <li class="menu__item"><a class="menu__link"href="relacionado.html">Relacionado</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="llenado helper">
+            <h2 class="llenado__titulo">Te gustaria recibir información adicional? Registrate!</h2>
+            <form class="formulario" action="exitoso.html" method="post" enctype="">
+                <h3 class="formulario__titulo2">Género:</h3> 
+                <label class="formulario__texto">Hombre<input class="llenado__opcion" type="radio" name="sexo" id="" value="hombre"></label>
+                <label class="formulario__texto">Mujer<input class="llenado__opcion" type="radio" name="sexo" id="" value="mujer"></label>
+                <label class="formulario__texto">No binario<input class="llenado__opcion" type="radio" name="sexo" id="" value="no binario"></label>
+                <label class="formulario__texto">Otro<input class="llenado__opcion" type="radio" name="sexo" id="" value="otro"></label>
+                <br>
+                <label class="formulario__texto" for="nombre">Nombre:</label> 
+                <input class="formulario__opcion" type="text" name="nombre" id="" required>
+                <label class="formulario__texto" for="apellido">Apellido:</label> 
+                <input class="formulario__opcion" type="text" name="apellido" id="" required>
+                <br>
+                <label class="formulario__texto" for="correo">Correo:</label>
+                <input class="formulario__opcion" type="email" name="correo" id="" required>
+                <input class="formulario__opcion" type="submit" value="Enviar">
+        </section>
+    </main>
+<footer class="footer">
+    <nav class="footer_nav">
+        <ul class="footer_menu">
+            <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/channel/UCDhEg3ByjFIju7bD4jhrctw" aria-label="youtube"><i class="fab fa-youtube"></i></a></li>
+            <li class="footer__item"><a class="footer__link" href="https://twitter.com/RasmusMX" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="footer__item"><a class="footer__link" href="https://www.instagram.com/therasmusofficial/" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
