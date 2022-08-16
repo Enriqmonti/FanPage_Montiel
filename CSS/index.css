@@ -23,6 +23,8 @@ a{
     color: inherit;
 }
 
+
+
 /* HELPERS */
 
 .helper{
@@ -30,12 +32,16 @@ a{
     max-width: 1200px;
 }
 
+.container{
+    min-height: 100vh;
+}
+
 /* HEADER */
 
 .main-header{
-    background:linear-gradient(-45deg red green blue yellow);
+    background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
     padding: 2rem;
-    animation: animate 15s ease infinite;
+    animation: animaciongradiente 15s ease infinite;
 }
 
 .main-header__nav{
@@ -49,12 +55,23 @@ a{
     display: block;
     max-width: 200px;
     min-width: 150px;
+    animation: movlogo 15s ease infinite;
 }
 
 .menu{
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+.menu__link{
+    padding: 10px;
+    transition: all .8s;
+}
+
+.menu__link:hover{
+    background-color:black;
+    color: white;
 }
 
 /* Contenido index*/
@@ -79,6 +96,7 @@ a{
 
 .news_image{
     display: flex;
+    /* transform: translate(-100px, 100px); */
 }
 
 /* Contenido live */
@@ -98,7 +116,9 @@ a{
     font-size: 18px;
 }
 
-
+.table{
+    color: white;
+}
 
 /* Contenido Miembros */
 
@@ -216,16 +236,16 @@ a{
         gap: 1rem;
     }
     }
-@keyframes animate{
+
+@keyframes movlogo{
     0%{
-        background-position: 0 50%;
+        transform: scale(1.1);
     }
     50%{
-        background-position: 100% 50%;
+        transform: scale(1.5);
     }
     100%{
-        background-position: 0 50%;
+        transform: scale(1.1);
     }
 }
-
     
