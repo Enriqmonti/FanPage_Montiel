@@ -20,9 +20,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.table {
-  color: white; }
-
 /* TERMINA RESET */
 /* HELPERS */
 .helper {
@@ -104,9 +101,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; }
-  .llenado__titulo {
-    font-size: 18px; }
+  gap: 20p .llenado __titulo;
+    gap-font-size: 18px; }
   .llenado .formulario {
     flex-direction: row;
     align-items: center;
